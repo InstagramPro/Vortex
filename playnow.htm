@@ -1,0 +1,57 @@
+<!-- <!DOCTYPE html> -->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vortex | LOGIN</title>
+    <link rel="icon" type="image/png" href="https://1385425497.rsc.cdn77.org//variants/vortex/images/new_design/favicon-32x32.png" sizes="32x32">
+    <link rel="stylesheet" href="css/playnow.css">
+    <script src="https://kit.fontawesome.com/6e5acc8382.js" crossorigin="anonymous"></script>
+
+    <script>
+        function login(){
+            var a=document.getElementById("login").value;
+            var p=document.getElementById("password").value;
+            let name="harshiilllll";
+            let pass="hhhhhhh123";
+            if(a.match(name)&&p.match(pass))
+                alert("LOGIN SUCCESFULLY");
+            else
+                alert("INVALID USERNAME OR PASSWORD");
+        }
+    </script>
+</head>
+
+<body class="container">
+    <div class="heading">
+        <a href="index.html">
+            <img src="img/logo-thin-2.svg" alt="">
+        </a>
+    </div>
+    <form action="" method="POST" onsubmit="login();">
+        <div class="form-box">
+            <div class="input">
+                <div class="login-icon"><i class="fas fa-user"></i></div>
+                <input type="text" placeholder="Login" required id="login">
+                <div class="pass-icon"><i class="fas fa-lock"></i></div>
+                <input type="password" placeholder="Password" required id="password">
+            </div>
+            <div class="login-btn">
+                <div class="arrow"><i class="fas fa-arrow-right hover"></i></div>
+                <button type="submit">LOGIN</button>
+                <!-- <input type="submit" value="Submit"> -->
+            </div>
+        </div>
+    </form>
+    <div class="links">
+        <a href="">Reset password</a>
+        <br>
+        <a href="">Create new account</a>
+        <br>
+        <a href="">Terms and Conditions</a>
+    </div>
+</body>
+
+</html>
